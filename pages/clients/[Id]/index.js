@@ -3,7 +3,11 @@ import {useRouter} from 'next/router'
 export default function ClientProjectsPage(){
     function loadProjectHandler(){
         //load data...
-        router.push('/clients/eji/projecta');
+      //  router.push('/clients/eji/projecta'); or
+      router.push({
+        pathname:'/clients/[id]/[clientprojectid]',
+        query:{id:"eji",clientprojectid:"projecta"}
+      })
 
     }
 

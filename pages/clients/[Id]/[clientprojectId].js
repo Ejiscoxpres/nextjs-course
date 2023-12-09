@@ -6,7 +6,7 @@ export default function SelectedClientProjectPage(){
     console.log(router.query);
     return(
         <div>
-            <h1>The project for a project for selected client</h1>
+            <h1>The project Page for a specific project for a selected client</h1>
         </div>
     );
 }
