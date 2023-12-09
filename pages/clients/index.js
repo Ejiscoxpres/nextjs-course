@@ -10,9 +10,12 @@ export default function ClientPage(){
         <div>
             <h1>The Client Page</h1>
             <ul>
-                <li><Link href="/clients/eji">Ejike</Link></li>
+                {clients.map((client) =>(
+                    <li key = {client.id}>
+                        <Link href="/clients/${client.id}">{client.name}</Link>
 
-                <li><Link href="/clients/ejik">Ejikeme</Link></li>
+                    </li>
+                ))}
             </ul>
         </div>
     );
